@@ -33,7 +33,7 @@ nav .circle {
 }
 
 /*# ---------------------------------- MAIN ---------------------------------- */
-/*? -------------------------------- Section 1 ------------------------------- */
+/*? -------------------------------- Home ------------------------------- */
 .section_1 {
   text-align: center;
   display: grid;
@@ -556,4 +556,66 @@ a {
   align-items: center;
   justify-content: center;
   padding: 20px;
+}
+
+
+/*# -------------------------------------------------------------------------- */
+/*#                                  Home                                */
+#home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 50px;
+  background-color: #fff;
+}
+
+#home .home-text {
+  max-width: 50%;
+  font-family: var(--ff-body);
+  color: #333;
+}
+
+#home .home-text h1 {
+  font-size: 2.5rem;
+  font-family: "DM Serif Display";
+  margin-bottom: 20px;
+  font-weight: bold
+  
+}
+
+
+#home .home-text a {
+  font-size: 1.2rem;
+  color: #6e9c7c;
+  text-decoration: none;
+  font-weight: bold;
+  text-decoration-line: underline;
+}
+
+#home .home-image {
+  max-width: 40%;
+}
+
+#home .home-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 768px) {
+  #home {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #home .home-text,
+  #home .home-image {
+    max-width: 100%;
+  }
+
+  #home .home-image {
+    margin-top: 20px;
+  }
 }
